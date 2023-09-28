@@ -1,0 +1,95 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    max-width: 100%;
+    overflow: auto;
+    min-height: 100vh;
+    background-color: green;
+
+}
+.details {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: green;
+    color: white;
+    min-height: 300px;
+}
+header {
+    background-color: white;
+    color: green;
+    min-height: 130px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header a {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px; 
+    font-weight: bold; 
+}
+
+
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    display: inline;
+    text-align: center;
+}
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .current a{
+    color: red;
+    text-decoration:double;
+}
+header a:hover{
+    color: red;
+    font-weight: bold;
+}
+
+.details li{
+    display: inline;
+    text-align: center;
+}
+.details li {
+    display: inline-block;
+    width: 20%; /* Adjust the width as needed */
+    text-align: center;
+    vertical-align:top; /* Align the top of each item */
+    margin: 0 5%; /* Add some margin for spacing */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    
+}
+#myself{
+    text-align: center;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+footer{
+    margin-top: auto;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.details li .domain{
+    font-size: large;
+}
