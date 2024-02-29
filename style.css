@@ -16,7 +16,7 @@ body {
     width: 100%;
     margin: auto;
     overflow: hidden;
-    background-color: green;
+    background-color: rgb(0, 128, 0);
     color: white;
     min-height: 300px;
 }
@@ -30,7 +30,7 @@ header {
     align-items: center;
 }
 header a {
-    color: green;
+    color: rgba(4, 128, 0, 0.721);
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     margin: 0 20px;
@@ -70,19 +70,33 @@ header a:hover{
 }
 .details li {
     display: inline-block;
-    width: 20%; /* Adjust the width as needed */
+    width: 20%; 
     text-align: center;
-    vertical-align:top; /* Align the top of each item */
-    margin: 0 5%; /* Add some margin for spacing */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    vertical-align:top; 
+    margin: 0 5%; 
+    box-sizing: border-box; 
     
 }
+/* @keyframes scrollText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+} */
 #myself{
     text-align: center;
     font-size: 25px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    /* white-space: nowrap; 
+    overflow: hidden; 
+    position: relative;  */
 }
+/* #myself strong {
+    position: absolute; 
+    animation: scrollText 10s linear infinite; 
+} */
 footer{
     margin-top: auto;
     background-color: #f0f0f0;
@@ -92,4 +106,10 @@ footer{
 }
 .details li .domain{
     font-size: large;
+}
+.resume img {
+    transition: transform 0.3s ease;
+}
+.resume img:hover{
+    transform: scale(0.7);
 }
